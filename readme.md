@@ -1,6 +1,6 @@
-# Project-PLP
+# My-ThinkBoard
 
-Project-PLP is a software project maintained by [Uknownevildoer](https://github.com/Uknownevildoer).  
+My-ThinkBoard is a software project maintained by [Uknownevildoer](https://github.com/Uknownevildoer).  
 This is a full-stack MERN (MongoDB, Express.js, React, Node.js) application developed as a capstone project for the PLP MERN Stack Development course.
 
 ## Table of Contents
@@ -30,11 +30,11 @@ This project demonstrates a complete MERN stack application with user authentica
 
 ## Installation
 
-To get started with Project-PLP, clone the repository:
+To get started with My-ThinkBoard, clone the repository:
 
 ```bash
-git clone https://github.com/Uknownevildoer/Project-PLP.git
-cd Project-PLP
+git clone https://github.com/Uknownevildoer/My-ThinkBoard.git
+cd My-ThinkBoard
 ```
 
 ## Backend Setup
@@ -89,7 +89,7 @@ npm run start for the backend
 
 ## Screenshots
 
-Below are screenshots demonstrating various features and UI elements of Project-PLP:
+Below are screenshots demonstrating various features and UI elements of My-ThinkBoard:
 
 ![Screenshot 2025-07-21 152457.png](Screenshot%202025-07-21%20152457.png)
 ![Screenshot 2025-07-21 152443.png](Screenshot%202025-07-21%20152443.png)
@@ -99,8 +99,8 @@ Below are screenshots demonstrating various features and UI elements of Project-
 
 ## Live Demo
 
-Check out the live demo of Project-PLP:  
-[https://project-plp.onrender.com](https://project-plp.onrender.com)
+Check out the live demo of My-ThinkBoard:  
+[https://My-ThinkBoard.onrender.com](https://My-ThinkBoard.onrender.com)
 
 ## Contributing
 
