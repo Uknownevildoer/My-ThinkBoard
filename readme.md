@@ -43,11 +43,7 @@ cd Project-PLP
    ```bash
    cd backend
    ```
-2. Install backend dependencies (e.g., Python or Node.js):
-   - For Python:
-     ```bash
-     pip install -r requirements.txt
-     ```
+2. Install backend dependencies ( Node.js):
    - For Node.js:
      ```bash
      npm install
@@ -62,7 +58,7 @@ cd Project-PLP
      ```
    - For Node.js:
      ```bash
-     npm start
+     npm run start
      ```
 
 ## Frontend Setup
@@ -80,18 +76,15 @@ cd Project-PLP
 
 4. Run frontend development server:
    ```bash
-   npm start
+   npm run build
    ```
 
 ## Usage
 
-Provide instructions and examples for using Project-PLP:
-
 ```bash
-# Example command to run the project
-python main.py
-# or
-npm start
+# command to run the project
+npm run build for backend
+npm run start for the backend
 ```
 
 ## Screenshots
@@ -125,6 +118,3 @@ Please fork the repository, create a branch, and submit a pull request.
 Created by [Uknownevildoer](https://github.com/Uknownevildoer)  
 Feel free to contact for any questions!
 
----
-
-> _Replace placeholder sections (in brackets) with details specific to your project for a more descriptive README._
