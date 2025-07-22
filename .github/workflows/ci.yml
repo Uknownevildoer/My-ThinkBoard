@@ -17,28 +17,28 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install server dependencies
+      - name: Install backend dependencies
         run: |
-          cd server
+          cd backend
           npm install
 
-      - name: Install client dependencies
+      - name: Install frontend dependencies
         run: |
-          cd client
+          cd frontend
           npm install
 
       # Add your test scripts here if you have them
-      # - name: Run server tests
+      # - name: Run backend tests
       #   run: |
-      #     cd server
+      #     cd backend
       #     npm test
 
-      # - name: Run client tests
+      # - name: Run frontend tests
       #   run: |
-      #     cd client
+      #     cd frontend
       #     npm test
 
-      - name: Build client
+      - name: Build frontend
         run: |
-          cd client
+          cd frontend
           npm run build 
