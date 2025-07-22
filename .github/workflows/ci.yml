@@ -22,10 +22,15 @@ jobs:
           cd backend
           npm ci
 
-      - name: Clean install frontend dependencies
+      - name: Remove node_modules and lockfile (frontend)
         run: |
           cd frontend
-          npm ci
+          rm -rf node_modules package-lock.json
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm install
 
       # Add your test scripts here if you have them
       # - name: Run backend tests
