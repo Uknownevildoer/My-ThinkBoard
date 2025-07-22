@@ -1,120 +1,81 @@
-# My-ThinkBoard
-
-My-ThinkBoard is a software project maintained by [Uknownevildoer](https://github.com/Uknownevildoer).  
-This is a full-stack MERN (MongoDB, Express.js, React, Node.js) application developed as a capstone project for the PLP MERN Stack Development course.
+My-ThinkBoard is a full-stack MERN (MongoDB, Express.js, React, Node.js) application developed as a capstone project for the PLP MERN Stack Development course and maintained by [Uknownevildoer](https://github.com/Uknownevildoer).
 
 ## Table of Contents
-
 - [🚀 Project Overview](#project-overview)
 - [Features](#features)
 - [Installation](#installation)
-- [Backend Setup](#backend-setup)
-- [Frontend Setup](#frontend-setup)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Live Demo](#live-demo)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Environment Variables](#environment-variables)
 
-## 🚀 Project Overview
-
-This project demonstrates a complete MERN stack application with user authentication, protected routes, and document management. It is designed to showcase skills in backend and frontend development and API integration.
+## Project Overview
+My-ThinkBoard is a modern, secure, and responsive note-taking app. It features user authentication, user-specific notes, profile management, password change, and a beautiful UI powered by DaisyUI and Tailwind CSS. The backend is secured with JWT, CORS, and rate limiting.
 
 ## Features
 
-- Responsive design: Works seamlessly across devices and screen sizes.
-- Delete functionality: Allows users to remove items from their thinkboard.
-- Real-time changes: Changes are made directly and instantly when saved.
-- Creation functionality: Easily create new notes or items for your thinkboard.
+- **User Authentication:** Register, login, and logout with JWT-based authentication.
+- **User-Specific Notes:** Each user can only see and manage their own notes.
+- **Profile Management:** Update your username, email, and password from the profile page.
+- **Protected Routes:** Only authenticated users can access notes and profile pages.
+- **DaisyUI Styling:** Clean, modern, and responsive UI.
+- **Production-Ready CORS:** Only allows requests from your deployed frontend.
+- **Rate Limiting:** Protects the backend from abuse (Upstash Redis).
+- **Toast Notifications:** Friendly feedback for all actions.
 
 ## Installation
 
-To get started with My-ThinkBoard, clone the repository:
-
+Clone the repository:
 ```bash
-git clone https://github.com/Uknownevildoer/My-ThinkBoard.git
-cd My-ThinkBoard
+git clone https://github.com/Uknownevildoer/my-thinkboard.git
+cd my-thinkboard
 ```
 
-## Backend Setup
-
+### Backend Setup
 1. Navigate to the backend directory:
    ```bash
    cd backend
    ```
-2. Install backend dependencies ( Node.js):
-   - For Node.js:
-     ```bash
-     npm install
-     ```
-3. Configure environment variables as needed:
-   - Copy `.env.example` to `.env` and update values.
-
-4. Run backend server:
-   - For Python:
-     ```bash
-     python app.py
-     ```
-   - For Node.js:
-     ```bash
-     npm run start
-     ```
-
-## Frontend Setup
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install frontend dependencies (e.g., React, Vue, etc.):
+2. Install backend dependencies:
    ```bash
    npm install
    ```
-3. Configure environment variables if required:
-   - Copy `.env.example` to `.env` and update values.
+3. Configure environment variables as above.
+4. Run the backend server:
+   ```bash
+   npm run start
+   ```
 
-4. Run frontend development server:
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd ../frontend
+   ```
+2. Install frontend dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the frontend development server:
+   ```bash
+   npm run dev
+   ```
+4. To build for production:
    ```bash
    npm run build
    ```
 
-## Usage
+## Environment Variables
 
-```bash
-# command to run the project
-npm run build for backend
-npm run start for the backend
+Create a `.env` file in the `backend/` directory with the following variables:
+```env
+MONGO_URI=your-mongodb-atlas-uri
+JWT_SECRET=your-very-strong-secret-key
+UPSTASH_REDIS_REST_URL=your-upstash-redis-url
+UPSTASH_REDIS_REST_TOKEN=your-upstash-redis-token
+PORT=3000 # or your preferred port
+NODE_ENV=production # or development
 ```
 
-## Screenshots
-
-Below are screenshots demonstrating various features and UI elements of My-ThinkBoard:
-
-![Screenshot 2025-07-21 152457.png](Screenshot%202025-07-21%20152457.png)
-![Screenshot 2025-07-21 152443.png](Screenshot%202025-07-21%20152443.png)
-![Screenshot 2025-07-21 152405.png](Screenshot%202025-07-21%20152405.png)
-![Screenshot 2025-07-21 152354.png](Screenshot%202025-07-21%20152354.png)
-![Screenshot 2025-07-21 152346.png](Screenshot%202025-07-21%20152346.png)
-
-## Live Demo
-
-Check out the live demo of My-ThinkBoard:  
-[https://My-ThinkBoard.onrender.com](https://My-ThinkBoard.onrender.com)
-
-## Contributing
-
-Contributions are welcome!  
-Please fork the repository, create a branch, and submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a pull request
-
-## Contact
-
-Created by [Uknownevildoer](https://github.com/Uknownevildoer)  
-Feel free to contact for any questions!
+## Usage
+- Register a new account or login.
+- Create, view, update, and delete your own notes.
+- Update your profile and change your password from the Profile page.
+- Logout securely from the Navbar.
 

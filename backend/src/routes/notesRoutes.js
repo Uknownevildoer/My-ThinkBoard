@@ -6,8 +6,11 @@ import {
   getNoteById,
   updateNote,
 } from "../controllers/notesController.js";
+import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
+
+router.use(authMiddleware);
 
 router.get("/", getAllNotes);
 router.get("/:id", getNoteById);
