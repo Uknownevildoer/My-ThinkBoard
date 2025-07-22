@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "../lib/axios";
+import api from "../lib/axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router";
 import { ArrowLeftIcon } from "lucide-react";
@@ -17,7 +17,7 @@ const RegisterPage = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("/auth/register", form);
+      await api.post("/auth/register", form);
       toast.success("Registration successful! You can now log in.");
       setForm({ username: "", email: "", password: "" });
       setTimeout(() => navigate("/login"), 1000);

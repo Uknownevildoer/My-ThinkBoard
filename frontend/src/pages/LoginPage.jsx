@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "../lib/axios";
+import api from "../lib/axios";
 import toast from "react-hot-toast";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router";
@@ -19,7 +19,7 @@ const LoginPage = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("/auth/login", form);
+      const res = await api.post("/auth/login", form);
       login(res.data.token, res.data.user);
       toast.success("Login successful!");
       setForm({ email: "", password: "" });
