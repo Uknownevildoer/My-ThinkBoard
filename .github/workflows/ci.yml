@@ -17,15 +17,15 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install backend dependencies
+      - name: Clean install backend dependencies
         run: |
           cd backend
-          npm install
+          npm ci
 
-      - name: Install frontend dependencies
+      - name: Clean install frontend dependencies
         run: |
           cd frontend
-          npm install
+          npm ci
 
       # Add your test scripts here if you have them
       # - name: Run backend tests
