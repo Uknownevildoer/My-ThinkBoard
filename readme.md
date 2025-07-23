@@ -1,5 +1,11 @@
 My-ThinkBoard is a full-stack MERN (MongoDB, Express.js, React, Node.js) application developed as a capstone project for the PLP MERN Stack Development course and maintained by [Uknownevildoer](https://github.com/Uknownevildoer).
 
+## 🌐 Live Demo
+- [my-think-board.vercel.app](https://my-think-board.vercel.app/)
+
+## 📄 Pitch Deck
+- [Gamma App Docs](https://gamma.app/docs/My-ThinkBoard-A-Modern-Secure-and-Responsive-Note-Taking-App-n5y74onoizjpco6)
+
 ## Table of Contents
 - [🚀 Project Overview](#project-overview)
 - [Features](#features)
