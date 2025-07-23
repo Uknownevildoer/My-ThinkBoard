@@ -19,7 +19,7 @@ const LoginPage = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await api.post("/auth/login", form);
+      const res = await api.post("/api/auth/login", form);
       login(res.data.token, res.data.user);
       toast.success("Login successful!");
       setForm({ email: "", password: "" });

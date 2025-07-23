@@ -27,7 +27,7 @@ const CreatePage = () => {
     }
     setSaving(true);
     try {
-      await api.post("/notes", { title, content });
+      await api.post("/api/notes", { title, content });
       toast.success("Note created!");
       navigate("/");
     } catch (error) {

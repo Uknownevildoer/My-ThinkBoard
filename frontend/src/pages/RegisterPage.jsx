@@ -17,7 +17,7 @@ const RegisterPage = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await api.post("/auth/register", form);
+      await api.post("/api/auth/register", form);
       toast.success("Registration successful! You can now log in.");
       setForm({ username: "", email: "", password: "" });
       setTimeout(() => navigate("/login"), 1000);

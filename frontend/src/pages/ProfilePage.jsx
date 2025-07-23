@@ -21,7 +21,7 @@ const ProfilePage = () => {
     }
     const fetchProfile = async () => {
       try {
-        const res = await api.get("/auth/me");
+        const res = await api.get("/api/auth/me");
         setForm({ username: res.data.username, email: res.data.email });
       } catch {
         toast.error("Failed to load profile");
@@ -40,7 +40,7 @@ const ProfilePage = () => {
     e.preventDefault();
     setSaving(true);
     try {
-      const res = await api.put("/auth/me", form);
+      const res = await api.put("/api/auth/me", form);
       toast.success("Profile updated!");
       login(token, res.data.user); // update context
     } catch (error) {
@@ -58,7 +58,7 @@ const ProfilePage = () => {
     e.preventDefault();
     setPwSaving(true);
     try {
-      await api.put("/auth/me/password", pwForm);
+      await api.put("/api/auth/me/password", pwForm);
       toast.success("Password updated!");
       setPwForm({ currentPassword: "", newPassword: "" });
     } catch (error) {
