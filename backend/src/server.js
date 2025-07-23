@@ -17,7 +17,7 @@ const __dirname = path.resolve();
 // middleware
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://my-think-board.vercel.app"
+  "https://my-think-board.vercel.app/"
 ];
 
 app.use(
